@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Parent -->
+  
+  <ThingDef ParentName="ASMedievalStorageBase" Name="ASMedievalBlockPileBase" Abstract="True">
+		<label>block pile</label>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+		</graphicData>
+		<description>A large stack of stone blocks carefully stacked to maximize storage space. Easy to make and quite effective as cover.</description>
+		<fillPercent>0.50</fillPercent>
+		<uiIconScale>1.2</uiIconScale>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<modExtensions>
+			<li Class="AdaptiveStorage.Extension">
+				<lockStorageSettingsToStuff>true</lockStorageSettingsToStuff>
+				<labelFormat>StuffAsNoun</labelFormat>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+  <!-- Block Pile 2x1 -->
+  
+	<ThingDef ParentName="ASMedievalBlockPileBase">
+		<defName>ASMedievalBlockPileA</defName>
+    <label>block pile 2x1</label>
+		<graphicData>
+			<texPath>ASMedieval/BlockPile/BlockPile2x1_A</texPath>
+      <drawSize>(3.0,2.0)</drawSize>
+		</graphicData>
+		<uiIconPath>ASMedieval/BlockPile/BlockPile2x1_C_south</uiIconPath>
+    <size>(2,1)</size>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Beauty>-2</Beauty>
+      <Mass>5</Mass>
+    </statBases>
+    <costStuffCount>30</costStuffCount>
+    <building>
+      <maxItemsInCell>4</maxItemsInCell>
+    </building>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+	</ThingDef>
+
+  <!-- Block Pile 2x2 -->
+
+  <ThingDef ParentName="ASMedievalBlockPileBase">
+    <defName>ASMedievalBlockPileB</defName>
+    <label>block pile 2x2</label>
+    <graphicData>
+      <texPath>ASMedieval/BlockPile/BlockPile2x2_A</texPath>
+      <drawSize>(3.0,3.0)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <uiIconPath>ASMedieval/BlockPile/BlockPile2x2_C</uiIconPath>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Beauty>-2</Beauty>
+      <Mass>5</Mass>
+    </statBases>
+    <costStuffCount>30</costStuffCount>
+    <building>
+      <maxItemsInCell>4</maxItemsInCell>
+    </building>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+  </ThingDef>
+
+</Defs>

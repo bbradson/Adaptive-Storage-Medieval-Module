@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!-- Haymow 1x1 -->
+  
+	<ThingDef ParentName="ASMedievalStorageBase">
+		<defName>ASMedievalHaymowA</defName>
+		<label>haymow 1x1</label>
+		<graphicData>
+			<texPath>ASMedieval/Haymow/Haymow1x1_A</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.0,2.0)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<description>A neat mow for easy storage of hay.</description>
+		<fillPercent>0.10</fillPercent>
+		<uiIconPath>ASMedieval/Haymow/Haymow1x1_C</uiIconPath>
+		<uiIconScale>1.4</uiIconScale>
+		<size>(1,1)</size>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>35</MaxHitPoints>
+			<WorkToBuild>60</WorkToBuild>
+			<Flammability>2</Flammability>
+			<Beauty>-2</Beauty>
+			<Mass>2</Mass>
+		</statBases>
+		<costList>
+			<Hay>15</Hay>
+		</costList>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<building>
+			<maxItemsInCell>4</maxItemsInCell>
+			<fixedStorageSettings>
+				<filter>
+					<disallowNotEverStorable>true</disallowNotEverStorable>
+					<thingDefs>
+						<li>Hay</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+		</building>
+	</ThingDef>
+
+  <!-- Haymow 2x1 -->
+
+  <ThingDef ParentName="ASMedievalStorageBase">
+    <defName>ASMedievalHaymowB</defName>
+    <label>haymow 2x1</label>
+    <graphicData>
+      <texPath>ASMedieval/Haymow/Haymow2x1_A</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.0,2.0)</drawSize>
+    </graphicData>
+    <description>A neat mow for easy storage of hay.</description>
+    <fillPercent>0.10</fillPercent>
+    <uiIconPath>ASMedieval/Haymow/Haymow2x1_C_north</uiIconPath>
+    <uiIconScale>1.4</uiIconScale>
+    <size>(2,1)</size>
+    <statBases>
+      <MaxHitPoints>35</MaxHitPoints>
+      <WorkToBuild>60</WorkToBuild>
+      <Flammability>2</Flammability>
+      <Beauty>-2</Beauty>
+      <Mass>2</Mass>
+    </statBases>
+    <costList>
+      <Hay>15</Hay>
+    </costList>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <building>
+      <maxItemsInCell>4</maxItemsInCell>
+      <fixedStorageSettings>
+        <filter>
+          <disallowNotEverStorable>true</disallowNotEverStorable>
+          <thingDefs>
+            <li>Hay</li>
+          </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    </building>
+  </ThingDef>
+
+</Defs>

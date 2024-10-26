@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Adaptive Storage Medieval Module</name>
+
+	<authors>
+		<li>Soul</li>
+		<li>Phaneron</li>
+		<li>Bradson</li>
+	</authors>
+
+	<packageId>adaptive.storage.medieval</packageId>
+
+	<description>Adaptive Storage - Medieval is a mod that brings fancy new ways for players to expand their idea of item storages! This module covers the medieval tech level and includes a good selection of storage containers to choose from to fulfill your needs.</description>
+
+	<supportedVersions>
+		<li>1.4</li>
+		<li>1.5</li>
+	</supportedVersions>
+
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>adaptive.storage.framework</li>
+	</loadAfter>
+
+	<modDependencies>
+		<li>
+			<packageId>adaptive.storage.framework</packageId>
+			<displayName>Adaptive Storage Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3033901359</steamWorkshopUrl>
+			<downloadUrl>https://github.com/bbradson/Adaptive-Storage-Framework</downloadUrl>
+		</li>
+	</modDependencies>
+</ModMetaData>

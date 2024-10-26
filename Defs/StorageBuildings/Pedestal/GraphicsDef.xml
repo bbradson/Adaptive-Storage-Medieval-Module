@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!-- Parent -->
+  
+	<AdaptiveStorage.GraphicsDef Name="ASMedievalPedestalGraphicBase" Abstract="True">
+		<itemGraphics>
+			<columns>
+				<c0>
+					<rows>
+						<r0>
+							<drawOffset>(0,0,0.3)</drawOffset>
+						</r0>
+					</rows>
+				</c0>
+			</columns>
+		</itemGraphics>
+		<showContainedItems>true</showContainedItems>
+	</AdaptiveStorage.GraphicsDef>
+
+  <!-- Wood Pedestal -->
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalPedestalGraphicBase">
+		<defName>ASMedievalPedestalWood</defName>
+		<targetDef>ASMedievalPedestalWood</targetDef>
+		<graphics>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/Pedestal/Pedestal_Wood</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(2.0,2.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+			</li>
+		</graphics>
+	</AdaptiveStorage.GraphicsDef>
+
+  <!-- Stone Pedestal -->
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalPedestalGraphicBase">
+    <defName>ASMedievalPedestalStone</defName>
+    <targetDef>ASMedievalPedestalStone</targetDef>
+    <graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/Pedestal/Pedestal_Stone</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>(2.0,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+      </li>
+    </graphics>
+  </AdaptiveStorage.GraphicsDef>
+
+  <!-- Metal Pedestal -->
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalPedestalGraphicBase">
+    <defName>ASMedievalPedestalMetal</defName>
+    <targetDef>ASMedievalPedestalMetal</targetDef>
+    <graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/Pedestal/Pedestal_Metal</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>(2.0,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+      </li>
+    </graphics>
+  </AdaptiveStorage.GraphicsDef>
+
+</Defs>

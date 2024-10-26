@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Parent -->
+
+  <ThingDef ParentName="ASMedievalStorageBase" Name="ASMedievalCrateThingBase" Abstract="True">
+		<label>crate</label>
+		<graphicData>
+			<texPath>ASMedieval/Crate/Crate_Wood_A</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.0,2.0)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<description>A sturdy crate for storing all kinds of different items.</description>
+		<fillPercent>0.20</fillPercent>
+		<uiIconPath>ASMedieval/Crate/Crate_Wood_B</uiIconPath>
+		<uiIconScale>1.4</uiIconScale>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>900</WorkToBuild>
+			<Flammability>1</Flammability>
+			<Beauty>0</Beauty>
+			<Mass>8</Mass>
+		</statBases>
+		<costStuffCount>20</costStuffCount>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<building>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<maxItemsInCell>4</maxItemsInCell>
+			<fixedStorageSettings>
+				<filter>
+					<disallowNotEverStorable>true</disallowNotEverStorable>
+					<categories>
+						<li>Root</li> <!-- Root means everything -->
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<paintable>true</paintable>
+		</building>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+	</ThingDef>
+
+  <!-- Wood Crate -->
+
+  <ThingDef ParentName="ASMedievalCrateThingBase">
+		<defName>ASMedievalCrateWoody</defName>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+	</ThingDef>
+
+  <!-- Stone Crate -->
+
+  <ThingDef ParentName="ASMedievalCrateThingBase">
+    <defName>ASMedievalCrateStony</defName>
+    <graphicData>
+      <texPath>ASMedieval/Crate/Crate_Stone_A</texPath>
+    </graphicData>
+    <uiIconPath>ASMedieval/Crate/Crate_Stone_B</uiIconPath>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+  </ThingDef>
+
+  <!-- Metal Crate -->
+
+  <ThingDef ParentName="ASMedievalCrateThingBase">
+    <defName>ASMedievalCrateMetallic</defName>
+    <graphicData>
+      <texPath>ASMedieval/Crate/Crate_Metal_A</texPath>
+    </graphicData>
+    <uiIconPath>ASMedieval/Crate/Crate_Metal_B</uiIconPath>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+  </ThingDef>
+</Defs>

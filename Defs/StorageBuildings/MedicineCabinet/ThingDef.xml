@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Parent -->
+
+  <ThingDef ParentName="ASMedievalStorageBase" Name="ASMedievalMedicineCabinetThingBase" Abstract="True">
+		<label>medicine cabinet</label>
+		<graphicData>
+			<texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Wood</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.0,2.0)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<description>A large sturdy crate meant for the storage of minerals.</description>
+		<fillPercent>0.20</fillPercent>
+		<uiIconPath>ASMedieval/MedicineCabinet/MedicineCabinet_Wood_south</uiIconPath>
+		<uiIconScale>1.5</uiIconScale>
+		<size>(2,1)</size>
+		<statBases>
+      <Flammability>1</Flammability>
+			<MaxHitPoints>65</MaxHitPoints>
+			<WorkToBuild>175</WorkToBuild>
+			<Beauty>0.5</Beauty>
+      <Mass>4</Mass>
+		</statBases>
+		<building>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<maxItemsInCell>3</maxItemsInCell>
+			<fixedStorageSettings>
+				<filter>
+					<disallowNotEverStorable>true</disallowNotEverStorable>
+          <categories>
+            <li>Drugs</li>
+            <li>Medicine</li>
+          </categories>
+				</filter>
+			</fixedStorageSettings>
+			<paintable>true</paintable>
+		</building>
+    <costStuffCount>10</costStuffCount>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+	</ThingDef>
+
+  <!-- Wood Medicine Cabinet -->
+  
+	<ThingDef ParentName="ASMedievalMedicineCabinetThingBase">
+		<defName>ASMedievalMedicineCabinet</defName>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+	</ThingDef>
+
+  <!-- Stone Medicine Cabinet -->
+
+  <ThingDef ParentName="ASMedievalMedicineCabinetThingBase">
+    <defName>ASMedievalMedicineCabinetStony</defName>
+    <graphicData>
+      <texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Stone</texPath>
+    </graphicData>
+    <uiIconPath>ASMedieval/MedicineCabinet/MedicineCabinet_Stone_south</uiIconPath>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+  </ThingDef>
+
+  <!-- Metal Medicine Cabinet -->
+
+  <ThingDef ParentName="ASMedievalMedicineCabinetThingBase">
+    <defName>ASMedievalMedicineCabinetMetallic</defName>
+    <graphicData>
+      <texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Metal</texPath>
+    </graphicData>
+    <uiIconPath>ASMedieval/MedicineCabinet/MedicineCabinet_Metal_south</uiIconPath>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+  </ThingDef>
+</Defs>

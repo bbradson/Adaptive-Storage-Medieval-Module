@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AdaptiveStorage.GraphicsDef Name="ASMedievalMineralCrateBase" Abstract="True">
+		<targetDef>ASMedievalMineralCrate</targetDef>
+		<showContainedItems>false</showContainedItems>
+	</AdaptiveStorage.GraphicsDef>
+
+	<AdaptiveStorage.GraphicsDef Name="ASMedievalMineralCrateStoneBase" Abstract="True">
+    <targetDef>ASMedievalMineralCrateStony</targetDef>
+		<showContainedItems>false</showContainedItems>
+	</AdaptiveStorage.GraphicsDef>
+
+  <AdaptiveStorage.GraphicsDef Name="ASMedievalMineralCrateMetalBase" Abstract="True">
+    <targetDef>ASMedievalMineralCrateMetallic</targetDef>
+    <showContainedItems>false</showContainedItems>
+  </AdaptiveStorage.GraphicsDef>
+
+  <!-- Parent Wood Mineral Crate -->
+
+	<AdaptiveStorage.GraphicsDef ParentName="ASMedievalMineralCrateBase">
+		<defName>ASMedievalMineralCrateBase</defName>
+		<graphics>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/MineralCrate/MineralCrateWood_Empty</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(2.5,2.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+			</li>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/MineralCrate/MineralCrateWood_Mixed</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(2.5,2.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+				<minimumStackCount>1</minimumStackCount>
+			</li>
+		</graphics>
+		<randomSelectionWeight>0</randomSelectionWeight>
+	</AdaptiveStorage.GraphicsDef>
+
+  <!-- Parent Stone Mineral Crate -->
+
+	<AdaptiveStorage.GraphicsDef ParentName="ASMedievalMineralCrateStoneBase">
+		<defName>ASMedievalMineralCrateStoneBase</defName>
+		<graphics>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/MineralCrate/MineralCrateStone_Empty</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(2.5,2.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+			</li>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/MineralCrate/MineralCrateStone_Mixed</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(2.5,2.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+				<minimumStackCount>1</minimumStackCount>
+			</li>
+		</graphics>
+		<randomSelectionWeight>0</randomSelectionWeight>
+	</AdaptiveStorage.GraphicsDef>
+
+  <!-- Parent Metal Mineral Crate -->
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalMineralCrateMetalBase">
+    <defName>ASMedievalMineralCrateMetalBase</defName>
+    <graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MineralCrate/MineralCrateMetal_Empty</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>(2.5,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MineralCrate/MineralCrateMetal_Mixed</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>(2.5,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>1</minimumStackCount>
+      </li>
+    </graphics>
+    <randomSelectionWeight>0</randomSelectionWeight>
+  </AdaptiveStorage.GraphicsDef>
+  
+  <!-- Wood Mineral Crate -->
+
+	<AdaptiveStorage.GraphicsDef ParentName="ASMedievalMineralCrateBase">
+		<defName>ASMedievalMineralCrateSteel</defName>
+		<graphics>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/MineralCrate/MineralCrateWood_SteelHalf</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>(2.5,2.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+				<minimumStackCount>1</minimumStackCount>
+			</li>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/MineralCrate/MineralCrateWood_SteelFull</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>(2.5,2.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+				<minimumStackCount>3</minimumStackCount>
+			</li>
+		</graphics>
+		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+		<requiredThingDefs>
+			<li>Steel</li>
+		</requiredThingDefs>
+	</AdaptiveStorage.GraphicsDef>
+
+	<AdaptiveStorage.GraphicsDef ParentName="ASMedievalMineralCrateBase">
+		<defName>ASMedievalMineralCratePlasteel</defName>
+		<graphics>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/MineralCrate/MineralCrateWood_PlasteelHalf</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+										<drawSize>(2.5,2.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+				<minimumStackCount>1</minimumStackCount>
+			</li>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/MineralCrate/MineralCrateWood_PlasteelFull</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+										<drawSize>(2.5,2.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+				<minimumStackCount>3</minimumStackCount>
+			</li>
+		</graphics>
+		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+		<requiredThingDefs>
+			<li>Plasteel</li>
+		</requiredThingDefs>
+	</AdaptiveStorage.GraphicsDef>
+
+	<AdaptiveStorage.GraphicsDef ParentName="ASMedievalMineralCrateBase">
+		<defName>ASMedievalMineralCrateGold</defName>
+		<graphics>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/MineralCrate/MineralCrateWood_GoldHalf</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+										<drawSize>(2.5,2.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+				<minimumStackCount>1</minimumStackCount>
+			</li>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/MineralCrate/MineralCrateWood_GoldFull</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+										<drawSize>(2.5,2.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+				<minimumStackCount>3</minimumStackCount>
+			</li>
+		</graphics>
+		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+		<requiredThingDefs>
+			<li>Gold</li>
+		</requiredThingDefs>
+	</AdaptiveStorage.GraphicsDef>
+
+	<AdaptiveStorage.GraphicsDef ParentName="ASMedievalMineralCrateBase">
+		<defName>ASMedievalMineralCrateSilver</defName>
+		<graphics>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/MineralCrate/MineralCrateWood_SilverHalf</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+										<drawSize>(2.5,2.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+				<minimumStackCount>1</minimumStackCount>
+			</li>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/MineralCrate/MineralCrateWood_SilverFull</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+										<drawSize>(2.5,2.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+				<minimumStackCount>3</minimumStackCount>
+			</li>
+		</graphics>
+    <onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+    <requiredThingDefs>
+      <li>Silver</li>
+    </requiredThingDefs>
+	</AdaptiveStorage.GraphicsDef>
+
+	<AdaptiveStorage.GraphicsDef ParentName="ASMedievalMineralCrateBase">
+		<defName>ASMedievalMineralCrateUranium</defName>
+		<graphics>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/MineralCrate/MineralCrateWood_UraniumHalf</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+										<drawSize>(2.5,2.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+				<minimumStackCount>1</minimumStackCount>
+			</li>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/MineralCrate/MineralCrateWood_UraniumFull</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+										<drawSize>(2.5,2.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+				<minimumStackCount>3</minimumStackCount>
+			</li>
+		</graphics>
+		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+		<requiredThingDefs>
+			<li>Uranium</li>
+		</requiredThingDefs>
+	</AdaptiveStorage.GraphicsDef>
+
+  <!-- Stone Mineral Crate -->
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalMineralCrateStoneBase">
+    <defName>ASMedievalMineralCrateStoneSteel</defName>
+    <graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MineralCrate/MineralCrateStone_SteeHalf</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(2.5,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>1</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MineralCrate/MineralCrateStone_SteelFull</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(2.5,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>3</minimumStackCount>
+      </li>
+    </graphics>
+    <onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+    <requiredThingDefs>
+      <li>Steel</li>
+    </requiredThingDefs>
+  </AdaptiveStorage.GraphicsDef>
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalMineralCrateStoneBase">
+    <defName>ASMedievalMineralCrateStonePlasteel</defName>
+    <graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MineralCrate/MineralCrateStone_PlasteelHalf</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(2.5,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>1</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MineralCrate/MineralCrateStone_PlasteelFull</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(2.5,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>3</minimumStackCount>
+      </li>
+    </graphics>
+    <onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+    <requiredThingDefs>
+      <li>Plasteel</li>
+    </requiredThingDefs>
+  </AdaptiveStorage.GraphicsDef>
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalMineralCrateStoneBase">
+    <defName>ASMedievalMineralCrateStoneGold</defName>
+    <graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MineralCrate/MineralCrateStone_GoldHalf</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(2.5,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>1</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MineralCrate/MineralCrateStone_GoldFull</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(2.5,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>3</minimumStackCount>
+      </li>
+    </graphics>
+    <onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+    <requiredThingDefs>
+      <li>Gold</li>
+    </requiredThingDefs>
+  </AdaptiveStorage.GraphicsDef>
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalMineralCrateStoneBase">
+    <defName>ASMedievalMineralCrateStoneSilver</defName>
+    <graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MineralCrate/MineralCrateStone_SilverHalf</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(2.5,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>1</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MineralCrate/MineralCrateStone_SilverFull</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(2.5,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>3</minimumStackCount>
+      </li>
+    </graphics>
+    <onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+    <requiredThingDefs>
+      <li>Silver</li>
+    </requiredThingDefs>
+  </AdaptiveStorage.GraphicsDef>
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalMineralCrateStoneBase">
+    <defName>ASMedievalMineralCrateStoneUranium</defName>
+    <graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MineralCrate/MineralCrateStone_UraniumHalf</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(2.5,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>1</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MineralCrate/MineralCrateStone_UraniumFull</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(2.5,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>3</minimumStackCount>
+      </li>
+    </graphics>
+    <onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+    <requiredThingDefs>
+      <li>Uranium</li>
+    </requiredThingDefs>
+  </AdaptiveStorage.GraphicsDef> 
+ 
+  <!-- Metal Mineral Crate -->
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalMineralCrateMetalBase">
+    <defName>ASMedievalMineralCrateMetalSteel</defName>
+    <graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MineralCrate/MineralCrateMetal_SteelHalf</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(2.5,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>1</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MineralCrate/MineralCrateMetal_SteelFull</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(2.5,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>3</minimumStackCount>
+      </li>
+    </graphics>
+    <onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+    <requiredThingDefs>
+      <li>Steel</li>
+    </requiredThingDefs>
+  </AdaptiveStorage.GraphicsDef>
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalMineralCrateMetalBase">
+    <defName>ASMedievalMineralCrateMetalPlasteel</defName>
+    <graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MineralCrate/MineralCrateMetal_PlasteelHalf</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(2.5,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>1</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MineralCrate/MineralCrateMetal_PlasteelFull</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(2.5,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>3</minimumStackCount>
+      </li>
+    </graphics>
+    <onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+    <requiredThingDefs>
+      <li>Plasteel</li>
+    </requiredThingDefs>
+  </AdaptiveStorage.GraphicsDef>
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalMineralCrateMetalBase">
+    <defName>ASMedievalMineralCrateMetalGold</defName>
+    <graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MineralCrate/MineralCrateMetal_GoldHalf</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(2.5,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>1</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MineralCrate/MineralCrateMetal_GoldFull</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(2.5,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>3</minimumStackCount>
+      </li>
+    </graphics>
+    <onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+    <requiredThingDefs>
+      <li>Gold</li>
+    </requiredThingDefs>
+  </AdaptiveStorage.GraphicsDef>
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalMineralCrateMetalBase">
+    <defName>ASMedievalMineralCrateMetalSilver</defName>
+    <graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MineralCrate/MineralCrateMetal_SilverHalf</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(2.5,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>1</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MineralCrate/MineralCrateMetal_SilverFull</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(2.5,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>3</minimumStackCount>
+      </li>
+    </graphics>
+    <onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+    <requiredThingDefs>
+      <li>Silver</li>
+    </requiredThingDefs>
+  </AdaptiveStorage.GraphicsDef>
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalMineralCrateMetalBase">
+    <defName>ASMedievalMineralCrateMetalUranium</defName>
+    <graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MineralCrate/MineralCrateMetal_UraniumHalf</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(2.5,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>1</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MineralCrate/MineralCrateMetal_UraniumFull</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(2.5,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>3</minimumStackCount>
+      </li>
+    </graphics>
+    <onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+    <requiredThingDefs>
+      <li>Uranium</li>
+    </requiredThingDefs>
+  </AdaptiveStorage.GraphicsDef>
+
+</Defs>

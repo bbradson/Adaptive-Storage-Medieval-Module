@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Parent -->
+
+  <ThingDef ParentName="ASMedievalStorageBase" Name="ASMedievalFoodBarrelThingBase" Abstract="True">
+		<label>food barrel</label>
+		<graphicData>
+			<texPath>ASMedieval/FoodBarrel/FoodBarrelWood_Empty</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.75,1.75)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<description>A barrel perfectly suited for the storage of perishable food.</description>
+		<fillPercent>0.20</fillPercent>
+		<uiIconPath>ASMedieval/FoodBarrel/FoodBarrelWood_Closed</uiIconPath>
+		<uiIconScale>1.2</uiIconScale>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<Beauty>-2</Beauty>
+      <Flammability>1</Flammability>
+      <Mass>4</Mass>
+		</statBases>
+		<building>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<maxItemsInCell>3</maxItemsInCell>
+			<fixedStorageSettings>
+				<filter>
+					<disallowNotEverStorable>true</disallowNotEverStorable>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+					<thingDefs>
+						<li>Kibble</li>
+						<li>Pemmican</li>
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<paintable>true</paintable>
+		</building>
+    <costStuffCount>20</costStuffCount>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+	</ThingDef>
+
+  <!-- Wood Food Barrel -->
+
+  <ThingDef ParentName="ASMedievalFoodBarrelThingBase">
+		<defName>ASMedievalFoodBarrelWoody</defName>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+	</ThingDef>
+
+    <!-- Stone Food Barrel -->
+  
+  <ThingDef ParentName="ASMedievalFoodBarrelThingBase">
+    <defName>ASMedievalFoodBarrelStony</defName>
+    <graphicData>
+      <texPath>ASMedieval/FoodBarrel/FoodBarrelStone_Empty</texPath>
+    </graphicData>
+    <uiIconPath>ASMedieval/FoodBarrel/FoodBarrelStone_Closed</uiIconPath>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+  </ThingDef>
+
+  <!-- Metal Food Barrel -->
+
+  <ThingDef ParentName="ASMedievalFoodBarrelThingBase">
+    <defName>ASMedievalFoodBarrelMetallic</defName>
+    <graphicData>
+      <texPath>ASMedieval/FoodBarrel/FoodBarrelMetal_Empty</texPath>
+    </graphicData>
+    <uiIconPath>ASMedieval/FoodBarrel/FoodBarrelMetal_Closed</uiIconPath>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+  </ThingDef>
+
+</Defs>

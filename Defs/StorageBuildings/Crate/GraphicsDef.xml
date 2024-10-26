@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Parent -->
+  
+	<AdaptiveStorage.GraphicsDef Name="ASMedievalCrateBase" Abstract="True">
+		<showContainedItems>true</showContainedItems>
+		<itemGraphics>
+			<columns>
+				<c0>
+					<rows>
+						<r0>
+							<drawOffset>(0,0,0.45)</drawOffset>
+							<stackBehaviour>Circle</stackBehaviour>
+							<stackOffsetFactor>0.3</stackOffsetFactor>
+						</r0>
+					</rows>
+				</c0>
+			</columns>
+		</itemGraphics>
+	</AdaptiveStorage.GraphicsDef>
+
+  <!-- Wood Crate -->
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalCrateBase">
+		<defName>ASMedievalCrateWoody</defName>
+		<targetDef>ASMedievalCrateWoody</targetDef>
+		<graphics>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/Crate/Crate_Wood_A</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(2.0,2.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+			</li>
+		</graphics>
+	</AdaptiveStorage.GraphicsDef>
+
+  <!-- Stone Crate -->
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalCrateBase">
+		<defName>ASMedievalCrateStony</defName>
+		<targetDef>ASMedievalCrateStony</targetDef>
+		<graphics>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/Crate/Crate_Stone_A</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(2.0,2.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+			</li>
+		</graphics>
+	</AdaptiveStorage.GraphicsDef>
+
+  <!-- Metal Crate -->
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalCrateBase">
+    <defName>ASMedievalCrateMetallic</defName>
+    <targetDef>ASMedievalCrateMetallic</targetDef>
+    <graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/Crate/Crate_Metal_A</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>(2.0,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+      </li>
+    </graphics>
+  </AdaptiveStorage.GraphicsDef>
+
+</Defs>

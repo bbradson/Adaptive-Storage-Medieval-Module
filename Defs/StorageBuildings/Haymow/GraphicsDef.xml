@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!-- Haymow 1x1 -->
+  
+	<AdaptiveStorage.GraphicsDef>
+		<defName>ASMedievalHaymowA</defName>
+		<targetDef>ASMedievalHaymowA</targetDef>
+		<graphics>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/Haymow/Haymow1x1_A</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(2,2)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+			</li>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/Haymow/Haymow1x1_B</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(2,2)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+				<minimumStackCount>2</minimumStackCount>
+			</li>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/Haymow/Haymow1x1_C</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>(2,2)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+				<minimumStackCount>4</minimumStackCount>
+			</li>
+		</graphics>
+		<showContainedItems>false</showContainedItems>
+	</AdaptiveStorage.GraphicsDef>
+
+  <!-- Haymow 2x1 -->
+
+  <AdaptiveStorage.GraphicsDef>
+    <defName>ASMedievalHaymowB</defName>
+    <targetDef>ASMedievalHaymowB</targetDef>
+    <graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/Haymow/Haymow2x1_A</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>(3,2)</drawSize>
+        </graphicData>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/Haymow/Haymow2x1_B</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>(3,2)</drawSize>
+        </graphicData>
+        <minimumStackCount>2</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/Haymow/Haymow2x1_C</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>(3,2)</drawSize>
+        </graphicData>
+        <minimumStackCount>4</minimumStackCount>
+      </li>
+    </graphics>
+    <showContainedItems>false</showContainedItems>
+  </AdaptiveStorage.GraphicsDef>
+  
+</Defs>

@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AdaptiveStorage.GraphicsDef Name="ASMedievalMedicineCabinetBase" Abstract="True">
+		<targetDef>ASMedievalMedicineCabinet</targetDef>
+		<showContainedItems>false</showContainedItems>
+	</AdaptiveStorage.GraphicsDef>
+
+	<AdaptiveStorage.GraphicsDef Name="ASMedievalMedicineCabinetStoneBase" Abstract="True">
+    <targetDef>ASMedievalMedicineCabinetStony</targetDef>
+		<showContainedItems>false</showContainedItems>
+	</AdaptiveStorage.GraphicsDef>
+
+  <AdaptiveStorage.GraphicsDef Name="ASMedievalMedicineCabinetMetalBase" Abstract="True">
+    <targetDef>ASMedievalMedicineCabinetMetallic</targetDef>
+    <showContainedItems>false</showContainedItems>
+  </AdaptiveStorage.GraphicsDef>
+
+  <!-- Parent Wood Medicine Cabinet -->
+
+	<AdaptiveStorage.GraphicsDef ParentName="ASMedievalMedicineCabinetBase">
+		<defName>ASMedievalMedicineCabinetBase</defName>
+		<graphics>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Wood</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(3.0,2.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+			</li>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Wood_MixedA</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+					<drawSize>(3.0,2.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+				<minimumStackCount>1</minimumStackCount>
+			</li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Wood_MixedB</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(3.0,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>3</minimumStackCount>
+      </li>
+		</graphics>
+		<randomSelectionWeight>0</randomSelectionWeight>
+	</AdaptiveStorage.GraphicsDef>
+
+  <!-- Parent Stone Medicine Cabinet -->
+
+	<AdaptiveStorage.GraphicsDef ParentName="ASMedievalMedicineCabinetStoneBase">
+		<defName>ASMedievalMedicineCabinetStoneBase</defName>
+		<graphics>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Stone</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(3.0,2.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+			</li>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Stone_MixedA</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+					<drawSize>(3.0,2.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+				<minimumStackCount>1</minimumStackCount>
+			</li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Stone_MixedB</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(3.0,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>3</minimumStackCount>
+      </li>
+		</graphics>
+		<randomSelectionWeight>0</randomSelectionWeight>
+	</AdaptiveStorage.GraphicsDef>
+
+  <!-- Parent Metal Medicine Cabinet -->
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalMedicineCabinetMetalBase">
+    <defName>ASMedievalMedicineCabinetMetalBase</defName>
+    <graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Metal</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>(3.0,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Metal_MixedA</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(3.0,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>1</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Metal_MixedB</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(3.0,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>3</minimumStackCount>
+      </li>
+    </graphics>
+    <randomSelectionWeight>0</randomSelectionWeight>
+  </AdaptiveStorage.GraphicsDef>
+  
+  <!-- Wood Medicine Cabinet -->
+
+	<AdaptiveStorage.GraphicsDef ParentName="ASMedievalMedicineCabinetBase">
+		<defName>ASMedievalMedicineCabinetMedicineHerbal</defName>
+		<graphics>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Wood_HerbalA</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>(3.0,2.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+				<minimumStackCount>1</minimumStackCount>
+			</li>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Wood_HerbalB</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>(3.0,2.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+				<minimumStackCount>3</minimumStackCount>
+			</li>
+		</graphics>
+		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+		<requiredThingDefs>
+			<li>MedicineHerbal</li>
+		</requiredThingDefs>
+	</AdaptiveStorage.GraphicsDef>
+
+	<AdaptiveStorage.GraphicsDef ParentName="ASMedievalMedicineCabinetBase">
+		<defName>ASMedievalMedicineCabinetMedicineIndustrial</defName>
+		<graphics>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Wood_IndustrialA</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+										<drawSize>(3.0,2.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+				<minimumStackCount>1</minimumStackCount>
+			</li>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Wood_IndustrialB</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+										<drawSize>(3.0,2.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+				<minimumStackCount>3</minimumStackCount>
+			</li>
+		</graphics>
+		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+		<requiredThingDefs>
+			<li>MedicineIndustrial</li>
+		</requiredThingDefs>
+	</AdaptiveStorage.GraphicsDef>
+
+	<AdaptiveStorage.GraphicsDef ParentName="ASMedievalMedicineCabinetBase">
+		<defName>ASMedievalMedicineCabinetMedicineUltratech</defName>
+		<graphics>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Wood_UltratechA</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+										<drawSize>(3.0,2.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+				<minimumStackCount>1</minimumStackCount>
+			</li>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Wood_UltratechB</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+										<drawSize>(3.0,2.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+				<minimumStackCount>3</minimumStackCount>
+			</li>
+		</graphics>
+		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+		<requiredThingDefs>
+			<li>MedicineUltratech</li>
+		</requiredThingDefs>
+	</AdaptiveStorage.GraphicsDef>
+
+  <!-- Stone Medicine Cabinet -->
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalMedicineCabinetStoneBase">
+    <defName>ASMedievalMedicineCabinetStoneMedicineHerbal</defName>
+    <graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Stone_HerbalA</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(3.0,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>1</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Stone_HerbalB</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(3.0,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>3</minimumStackCount>
+      </li>
+    </graphics>
+    <onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+    <requiredThingDefs>
+      <li>MedicineHerbal</li>
+    </requiredThingDefs>
+  </AdaptiveStorage.GraphicsDef>
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalMedicineCabinetStoneBase">
+    <defName>ASMedievalMedicineCabinetStoneMedicineIndustrial</defName>
+    <graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Stone_IndustrialA</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(3.0,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>1</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Stone_IndustrialB</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(3.0,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>3</minimumStackCount>
+      </li>
+    </graphics>
+    <onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+    <requiredThingDefs>
+      <li>MedicineIndustrial</li>
+    </requiredThingDefs>
+  </AdaptiveStorage.GraphicsDef>
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalMedicineCabinetStoneBase">
+    <defName>ASMedievalMedicineCabinetStoneMedicineUltratech</defName>
+    <graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Stone_UltratechA</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(3.0,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>1</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Stone_UltratechB</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(3.0,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>3</minimumStackCount>
+      </li>
+    </graphics>
+    <onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+    <requiredThingDefs>
+      <li>MedicineUltratech</li>
+    </requiredThingDefs>
+  </AdaptiveStorage.GraphicsDef>
+ 
+  <!-- Metal Medicine Cabinet -->
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalMedicineCabinetMetalBase">
+    <defName>ASMedievalMedicineCabinetMetalMedicineHerbal</defName>
+    <graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Metal_HerbalA</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(3.0,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>1</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Metal_HerbalB</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(3.0,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>3</minimumStackCount>
+      </li>
+    </graphics>
+    <onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+    <requiredThingDefs>
+      <li>MedicineHerbal</li>
+    </requiredThingDefs>
+  </AdaptiveStorage.GraphicsDef>
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalMedicineCabinetMetalBase">
+    <defName>ASMedievalMedicineCabinetMetalMedicineIndustrial</defName>
+    <graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Metal_IndustrialA</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(3.0,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>1</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Metal_IndustrialB</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(3.0,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>3</minimumStackCount>
+      </li>
+    </graphics>
+    <onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+    <requiredThingDefs>
+      <li>MedicineIndustrial</li>
+    </requiredThingDefs>
+  </AdaptiveStorage.GraphicsDef>
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalMedicineCabinetMetalBase">
+    <defName>ASMedievalMedicineCabinetMetalMedicineUltratech</defName>
+    <graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Metal_UltratechA</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(3.0,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>1</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/MedicineCabinet/MedicineCabinet_Metal_UltratechB</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(3.0,2.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>3</minimumStackCount>
+      </li>
+    </graphics>
+    <onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+    <requiredThingDefs>
+      <li>MedicineUltratech</li>
+    </requiredThingDefs>
+  </AdaptiveStorage.GraphicsDef>
+
+</Defs>

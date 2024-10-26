@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchProjectDef Name="ASMedievalResearchBase" Abstract="True">
+		<baseCost>400</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>ASFAdaptiveStorage</tab>
+		<tags>
+			<li>TribalStart</li>
+		</tags>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="ASMedievalResearchBase">
+		<defName>ASMedievalMedievalStorage</defName>
+		<label>Medieval storage</label>
+		<description>Build simple containers and means of storage for basic materials.</description>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="ASMedievalResearchBase">
+		<defName>ASMedievalMedievalItemDisplay</defName>
+		<label>Medieval item display</label>
+		<description>Build simple, yet beautiful plinths for displaying items.</description>
+		<researchViewX>0</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+</Defs>

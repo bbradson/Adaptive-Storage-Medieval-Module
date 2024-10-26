@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Parent -->
+
+  <ThingDef ParentName="ASMedievalStorageBase" Name="ASMedievalMineralCrateThingBase" Abstract="True">
+		<label>mineral crate</label>
+		<graphicData>
+			<texPath>ASMedieval/MineralCrate/MineralCrateWood_Empty</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.5,2.0)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<description>A large sturdy crate meant for the storage of minerals.</description>
+		<fillPercent>0.20</fillPercent>
+		<uiIconPath>ASMedieval/MineralCrate/MineralCrateWood_Empty_north</uiIconPath>
+		<uiIconScale>1.3</uiIconScale>
+		<size>(2,1)</size>
+		<statBases>
+      <Flammability>1</Flammability>
+			<MaxHitPoints>65</MaxHitPoints>
+			<WorkToBuild>175</WorkToBuild>
+			<Beauty>0.5</Beauty>
+      <Mass>4</Mass>
+		</statBases>
+		<building>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<maxItemsInCell>3</maxItemsInCell>
+			<fixedStorageSettings>
+				<filter>
+					<disallowNotEverStorable>true</disallowNotEverStorable>
+          <thingDefs>
+						<li>Gold</li>
+            <li>Plasteel</li>
+            <li>Silver</li>
+            <li>Steel</li>
+            <li>Uranium</li>
+          </thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<paintable>true</paintable>
+		</building>
+    <costStuffCount>10</costStuffCount>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+	</ThingDef>
+
+  <!-- Wood Mineral Crate -->
+  
+	<ThingDef ParentName="ASMedievalMineralCrateThingBase">
+		<defName>ASMedievalMineralCrate</defName>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+	</ThingDef>
+
+  <!-- Stone Mineral Crate -->
+
+  <ThingDef ParentName="ASMedievalMineralCrateThingBase">
+    <defName>ASMedievalMineralCrateStony</defName>
+    <graphicData>
+      <texPath>ASMedieval/MineralCrate/MineralCrateStone_Empty</texPath>
+    </graphicData>
+    <uiIconPath>ASMedieval/MineralCrate/MineralCrateStone_Empty_north</uiIconPath>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+  </ThingDef>
+
+  <!-- Metal Mineral Crate -->
+
+  <ThingDef ParentName="ASMedievalMineralCrateThingBase">
+    <defName>ASMedievalMineralCrateMetallic</defName>
+    <graphicData>
+      <texPath>ASMedieval/MineralCrate/MineralCrateMetal_Empty</texPath>
+    </graphicData>
+    <uiIconPath>ASMedieval/MineralCrate/MineralCrateMetal_Empty_north</uiIconPath>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+  </ThingDef>
+</Defs>

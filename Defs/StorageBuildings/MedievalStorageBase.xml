@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="AdaptiveStorageBase" Name="ASMedievalStorageBase" Abstract="True">
+		<researchPrerequisites>
+			<li>ASMedievalMedievalStorage</li>
+		</researchPrerequisites>
+	</ThingDef>
+</Defs>

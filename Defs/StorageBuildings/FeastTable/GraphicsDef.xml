@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AdaptiveStorage.GraphicsDef Name="ASMedievalFeastTableBase" Abstract="True">
+		<targetDef>ASMedievalFeastTable</targetDef>
+		<showContainedItems>false</showContainedItems>
+	</AdaptiveStorage.GraphicsDef>
+
+	<AdaptiveStorage.GraphicsDef Name="ASMedievalFeastTableStoneBase" Abstract="True">
+    <targetDef>ASMedievalFeastTableStony</targetDef>
+		<showContainedItems>false</showContainedItems>
+	</AdaptiveStorage.GraphicsDef>
+
+  <AdaptiveStorage.GraphicsDef Name="ASMedievalFeastTableMetalBase" Abstract="True">
+    <targetDef>ASMedievalFeastTableMetallic</targetDef>
+    <showContainedItems>false</showContainedItems>
+  </AdaptiveStorage.GraphicsDef>
+
+  <!-- Parent Wood Feast Table -->
+
+	<AdaptiveStorage.GraphicsDef ParentName="ASMedievalFeastTableBase">
+		<defName>ASMedievalFeastTableBase</defName>
+		<graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/FeastTable/FeastTable_WoodBase</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>(5.0,4.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+      </li>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/FeastTable/FeastTable_Wood_MixA</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+					<drawSize>(5.0,4.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+        <minimumStackCount>1</minimumStackCount>
+			</li>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/FeastTable/FeastTable_Wood_MixB</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+					<drawSize>(5.0,4.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+				<minimumStackCount>3</minimumStackCount>
+			</li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/FeastTable/FeastTable_Wood_MixC</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(5.0,4.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>6</minimumStackCount>
+      </li>
+		</graphics>
+		<randomSelectionWeight>0</randomSelectionWeight>
+	</AdaptiveStorage.GraphicsDef>
+
+  <!-- Parent Stone Feast Table -->
+
+	<AdaptiveStorage.GraphicsDef ParentName="ASMedievalFeastTableStoneBase">
+		<defName>ASMedievalFeastTableStoneBase</defName>
+		<graphics>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/FeastTable/FeastTable_StoneBase</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(5.0,4.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+			</li>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/FeastTable/FeastTable_Stone_MixA</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+					<drawSize>(5.0,4.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+				<minimumStackCount>1</minimumStackCount>
+			</li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/FeastTable/FeastTable_Stone_MixB</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(5.0,4.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>3</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/FeastTable/FeastTable_Stone_MixC</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(5.0,4.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>6</minimumStackCount>
+      </li>
+		</graphics>
+		<randomSelectionWeight>0</randomSelectionWeight>
+	</AdaptiveStorage.GraphicsDef>
+
+  <!-- Parent Metal Feast Table -->
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalFeastTableMetalBase">
+    <defName>ASMedievalFeastTableMetalBase</defName>
+    <graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/FeastTable/FeastTable_MetalBase</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>(5.0,4.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/FeastTable/FeastTable_Metal_MixA</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(5.0,4.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>1</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/FeastTable/FeastTable_Metal_MixB</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(5.0,4.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>3</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/FeastTable/FeastTable_Metal_MixC</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(5.0,4.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>6</minimumStackCount>
+      </li>
+    </graphics>
+    <randomSelectionWeight>0</randomSelectionWeight>
+  </AdaptiveStorage.GraphicsDef>
+  
+  
+  <!-- Wood Feast Table -->
+
+	<AdaptiveStorage.GraphicsDef ParentName="ASMedievalFeastTableBase">
+		<defName>ASMedievalFeastTableCarnivore</defName>
+		<graphics>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/FeastTable/FeastTable_Wood_CarA</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>(5.0,4.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+				<minimumStackCount>1</minimumStackCount>
+			</li>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/FeastTable/FeastTable_Wood_CarB</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>(5.0,4.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+				<minimumStackCount>3</minimumStackCount>
+			</li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/FeastTable/FeastTable_Wood_CarC</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(5.0,4.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>6</minimumStackCount>
+      </li>
+		</graphics>
+		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+		<requiredThingDefs>
+      <li>MealFine_Meat</li>
+      <li>MealLavish_Meat</li>
+		</requiredThingDefs>
+	</AdaptiveStorage.GraphicsDef>
+
+	<AdaptiveStorage.GraphicsDef ParentName="ASMedievalFeastTableBase">
+		<defName>ASMedievalFeastTableVegetarian</defName>
+		<graphics>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/FeastTable/FeastTable_Wood_VegA</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+										<drawSize>(5.0,4.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+				<minimumStackCount>1</minimumStackCount>
+			</li>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/FeastTable/FeastTable_Wood_VegB</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+										<drawSize>(5.0,4.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+				<minimumStackCount>3</minimumStackCount>
+			</li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/FeastTable/FeastTable_Wood_VegC</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(5.0,4.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>6</minimumStackCount>
+      </li>
+		</graphics>
+		<onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+		<requiredThingDefs>
+			<li>MealFine_Veg</li>
+      <li>MealLavish_Veg</li>
+		</requiredThingDefs>
+	</AdaptiveStorage.GraphicsDef>
+
+  <!-- Stone Feast Table -->
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalFeastTableStoneBase">
+    <defName>ASMedievalFeastTableStoneSteel</defName>
+    <graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/FeastTable/FeastTable_Stone_CarA</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(5.0,4.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>1</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/FeastTable/FeastTable_Stone_CarB</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(5.0,4.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>3</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/FeastTable/FeastTable_Stone_CarC</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(5.0,4.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>6</minimumStackCount>
+      </li>
+    </graphics>
+    <onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+    <requiredThingDefs>
+      <li>MealFine_Meat</li>
+      <li>MealLavish_Meat</li>
+    </requiredThingDefs>
+  </AdaptiveStorage.GraphicsDef>
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalFeastTableStoneBase">
+    <defName>ASMedievalFeastTableStonePlasteel</defName>
+    <graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/FeastTable/FeastTable_Stone_VegA</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(5.0,4.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>1</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/FeastTable/FeastTable_Stone_VegB</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(5.0,4.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>3</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/FeastTable/FeastTable_Stone_VegC</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(5.0,4.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>6</minimumStackCount>
+      </li>
+    </graphics>
+    <onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+    <requiredThingDefs>
+      <li>MealFine_Veg</li>
+      <li>MealLavish_Veg</li>
+    </requiredThingDefs>
+  </AdaptiveStorage.GraphicsDef>
+ 
+  <!-- Metal Feast Table -->
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalFeastTableMetalBase">
+    <defName>ASMedievalFeastTableMetalSteel</defName>
+    <graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/FeastTable/FeastTable_Stone_CarA</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(5.0,4.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>1</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/FeastTable/FeastTable_Stone_CarB</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(5.0,4.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>3</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/FeastTable/FeastTable_Stone_CarC</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(5.0,4.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>6</minimumStackCount>
+      </li>
+    </graphics>
+    <onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+    <requiredThingDefs>
+      <li>MealFine_Meat</li>
+      <li>MealLavish_Meat</li>
+    </requiredThingDefs>
+  </AdaptiveStorage.GraphicsDef>
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalFeastTableMetalBase">
+    <defName>ASMedievalFeastTableMetalPlasteel</defName>
+    <graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/FeastTable/FeastTable_Stone_VegA</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(5.0,4.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>1</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/FeastTable/FeastTable_Stone_VegB</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(5.0,4.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>3</minimumStackCount>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/FeastTable/FeastTable_Stone_VegC</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(5.0,4.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>6</minimumStackCount>
+      </li>
+    </graphics>
+    <onlyAllowRequiredThingDefs>true</onlyAllowRequiredThingDefs>
+    <requiredThingDefs>
+      <li>MealFine_Veg</li>
+      <li>MealLavish_Veg</li>
+    </requiredThingDefs>
+  </AdaptiveStorage.GraphicsDef>
+
+</Defs>

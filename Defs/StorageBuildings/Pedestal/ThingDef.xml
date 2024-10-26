@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Parent -->
+  
+	<ThingDef ParentName="ASMedievalItemDisplayBase" Name="ASMedievalPedestalBase" Abstract="True">
+		<label>pedestal</label>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.0,2.0)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<description>[TODO]</description>
+		<fillPercent>0.20</fillPercent>
+		<uiIconScale>1.5</uiIconScale>
+		<size>(1,1)</size>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>21600</WorkToBuild>
+			<Beauty>30</Beauty>
+			<Flammability>1</Flammability>
+			<Mass>16</Mass>
+		</statBases>
+		<costStuffCount>40</costStuffCount>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<building>
+			<maxItemsInCell>1</maxItemsInCell>
+			<fixedStorageSettings>
+				<filter>
+					<disallowNotEverStorable>true</disallowNotEverStorable>
+					<categories>
+						<li>Root</li> <!-- everything -->
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<paintable>true</paintable>
+		</building>
+		<comps>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtFurniture</nameMaker>
+				<descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+				<minQualityForArtistic>Awful</minQualityForArtistic>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<!-- Wood Pedestal -->
+
+	<ThingDef ParentName="ASMedievalPedestalBase">
+		<defName>ASMedievalPedestalWood</defName>
+		<graphicData>
+			<texPath>ASMedieval/Pedestal/Pedestal_Wood</texPath>
+		</graphicData>
+		<uiIconPath>ASMedieval/Pedestal/Pedestal_Wood</uiIconPath>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+	</ThingDef>
+
+	<!-- Stone Pedestal -->
+
+	<ThingDef ParentName="ASMedievalPedestalBase">
+		<defName>ASMedievalPedestalStone</defName>
+		<graphicData>
+			<texPath>ASMedieval/Pedestal/Pedestal_Stone</texPath>
+		</graphicData>
+	<uiIconPath>ASMedieval/Pedestal/Pedestal_Stone</uiIconPath>
+	<stuffCategories>
+		<li>Stony</li>
+	</stuffCategories>
+	</ThingDef>
+
+	<!-- Metal Pedestal -->
+
+	<ThingDef ParentName="ASMedievalPedestalBase">
+		<defName>ASMedievalPedestalMetal</defName>
+		<graphicData>
+			<texPath>ASMedieval/Pedestal/Pedestal_Metal</texPath>
+		</graphicData>
+		<uiIconPath>ASMedieval/Pedestal/Pedestal_Metal</uiIconPath>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	</ThingDef>
+
+</Defs>
