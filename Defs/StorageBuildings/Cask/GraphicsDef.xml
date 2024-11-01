@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Parent -->  
+  
+  <AdaptiveStorage.GraphicsDef Name="ASMedievalCaskWoodBase" Abstract="True">
+    <targetDef>ASMedievalCaskWoody</targetDef>
+    <showContainedItems>false</showContainedItems>
+  </AdaptiveStorage.GraphicsDef>
+
+  <AdaptiveStorage.GraphicsDef Name="ASMedievalCaskStoneBase" Abstract="True">
+    <targetDef>ASMedievalCaskStony</targetDef>
+    <showContainedItems>false</showContainedItems>
+  </AdaptiveStorage.GraphicsDef>
+
+  <AdaptiveStorage.GraphicsDef Name="ASMedievalCaskMetalBase" Abstract="True">
+    <targetDef>ASMedievalCaskMetallic</targetDef>
+    <showContainedItems>false</showContainedItems>
+  </AdaptiveStorage.GraphicsDef>
+
+  <!-- Wood Cask -->
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalCaskWoodBase">
+		<defName>ASMedievalCaskWoody</defName>
+		<targetDef>ASMedievalCaskWoody</targetDef>
+		<graphics>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/Cask/Cask_Empty_Wood</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(4.0,4.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+			</li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/Cask/Cask_Full_Wood</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>(4.0,4.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>1</minimumStackCount>
+      </li>
+		</graphics>
+	</AdaptiveStorage.GraphicsDef>
+
+  <!-- Stone Cask -->
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalCaskStoneBase">
+		<defName>ASMedievalCaskStony</defName>
+		<targetDef>ASMedievalCaskStony</targetDef>
+		<graphics>
+			<li>
+				<graphicData>
+					<texPath>ASMedieval/Cask/Cask_Empty_Stone</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>(4.0,4.0)</drawSize>
+					<drawRotated>false</drawRotated>
+				</graphicData>
+			</li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/Cask/Cask_Full_Stone</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>(4.0,4.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>1</minimumStackCount>
+      </li>
+		</graphics>
+	</AdaptiveStorage.GraphicsDef>
+
+  <!-- Metal Cask -->
+
+  <AdaptiveStorage.GraphicsDef ParentName="ASMedievalCaskMetalBase">
+    <defName>ASMedievalCaskMetallic</defName>
+    <targetDef>ASMedievalCaskMetallic</targetDef>
+    <graphics>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/Cask/Cask_Empty_Metal</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>(4.0,4.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+      </li>
+      <li>
+        <graphicData>
+          <texPath>ASMedieval/Cask/Cask_Full_Metal</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>(4.0,4.0)</drawSize>
+          <drawRotated>false</drawRotated>
+        </graphicData>
+        <minimumStackCount>1</minimumStackCount>
+      </li>
+    </graphics>
+  </AdaptiveStorage.GraphicsDef>
+
+</Defs>
