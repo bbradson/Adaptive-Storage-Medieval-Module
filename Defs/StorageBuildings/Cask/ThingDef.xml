@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- Parent -->
+	<!-- Parent -->
 
-  <ThingDef ParentName="ASMedievalStorageBase" Name="ASMedievalCaskThingBase" Abstract="True">
+	<ThingDef ParentName="ASMedievalStorageBase" Name="ASMedievalCaskThingBase" Abstract="True">
 		<label>cask</label>
 		<graphicData>
 			<texPath>ASMedieval/Cask/Cask_Full_Wood</texPath>
@@ -28,12 +28,10 @@
 			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
 			<maxItemsInCell>5</maxItemsInCell>
 			<fixedStorageSettings>
-        <filter>
-          <disallowNotEverStorable>true</disallowNotEverStorable>
-          <thingDefs>
-            <li>Beer</li>
-          </thingDefs>
-        </filter>
+				<filter>
+					<disallowNotEverStorable>true</disallowNotEverStorable>
+					<thingDefs />
+				</filter>
 			</fixedStorageSettings>
 			<paintable>true</paintable>
 		</building>
@@ -43,38 +41,38 @@
 		</thingCategories>
 	</ThingDef>
 
-  <!-- Wood Cask -->
+	<!-- Wood Cask -->
 
-  <ThingDef ParentName="ASMedievalCaskThingBase">
+	<ThingDef ParentName="ASMedievalCaskThingBase">
 		<defName>ASMedievalCaskWoody</defName>
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
 	</ThingDef>
 
-  <!-- Stone Cask -->
+	<!-- Stone Cask -->
 
-  <ThingDef ParentName="ASMedievalCaskThingBase">
-    <defName>ASMedievalCaskStony</defName>
-    <graphicData>
-      <texPath>ASMedieval/Cask/Cask_Full_Stone</texPath>
-    </graphicData>
-    <uiIconPath>ASMedieval/Cask/Cask_Full_Stone_north</uiIconPath>
-    <stuffCategories>
-      <li>Stony</li>
-    </stuffCategories>
-  </ThingDef>
+	<ThingDef ParentName="ASMedievalCaskThingBase">
+		<defName>ASMedievalCaskStony</defName>
+		<graphicData>
+			<texPath>ASMedieval/Cask/Cask_Full_Stone</texPath>
+		</graphicData>
+		<uiIconPath>ASMedieval/Cask/Cask_Full_Stone_north</uiIconPath>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+	</ThingDef>
 
-  <!-- Metal Cask -->
+	<!-- Metal Cask -->
 
-  <ThingDef ParentName="ASMedievalCaskThingBase">
-    <defName>ASMedievalCaskMetallic</defName>
-    <graphicData>
-      <texPath>ASMedieval/Cask/Cask_Full_Metal</texPath>
-    </graphicData>
-    <uiIconPath>ASMedieval/Cask/Cask_Full_Metal_north</uiIconPath>
-    <stuffCategories>
-      <li>Metallic</li>
-    </stuffCategories>
-  </ThingDef>
+	<ThingDef ParentName="ASMedievalCaskThingBase">
+		<defName>ASMedievalCaskMetallic</defName>
+		<graphicData>
+			<texPath>ASMedieval/Cask/Cask_Full_Metal</texPath>
+		</graphicData>
+		<uiIconPath>ASMedieval/Cask/Cask_Full_Metal_north</uiIconPath>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	</ThingDef>
 </Defs>

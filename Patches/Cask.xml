@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="GeneratorOperation.PatchGenerator">
+		<xpath>Defs/ThingDef[contains(ingestible/foodType, "Liquor")]/defName</xpath>
+		<value><![CDATA[
+			<Operation Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[@Name="ASMedievalCaskThingBase"]/building/fixedStorageSettings/filter/thingDefs</xpath>
+				<value>
+					<li>{text()}</li>
+				</value>
+			</Operation>
+		]]></value>
+	</Operation>
+</Patch>
