@@ -4,9 +4,6 @@
 		<baseCost>800</baseCost>
 		<techLevel>Medieval</techLevel>
 		<tab>ASFAdaptiveStorage</tab>
-		<tags>
-			<li>TribalStart</li>
-		</tags>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef ParentName="ASMedievalResearchBase">
@@ -15,6 +12,9 @@
 		<description>Build complex containers and means of storage for different materials.</description>
 		<researchViewX>0</researchViewX>
 		<researchViewY>1</researchViewY>
+		<tags>
+			<li>TribalStart</li>
+		</tags>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef ParentName="ASMedievalResearchBase">
