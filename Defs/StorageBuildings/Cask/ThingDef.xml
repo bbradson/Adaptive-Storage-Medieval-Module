@@ -10,7 +10,7 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4.0,4.0)</drawSize>
 		</graphicData>
-		<description>A large cask for storing alcohol.</description>
+		<description>A large cask designed for the long-term storage of alcoholic beverages. It is compartmentalized on the inside, allowing different liquors to be stored without mixing.</description>
 		<fillPercent>0.20</fillPercent>
 		<uiIconPath>ASMedieval/Cask/Cask_Full_Wood_north</uiIconPath>
 		<uiIconScale>1.4</uiIconScale>
