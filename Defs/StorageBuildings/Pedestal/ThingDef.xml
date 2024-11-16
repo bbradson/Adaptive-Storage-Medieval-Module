@@ -10,7 +10,7 @@
 			<drawSize>(2.0,2.0)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-		<description>[TODO]</description>
+		<description>A pedestal with beautiful engravings for displaying items. Items stored here will draw the attention of pawns and their beauty won’t be ignored.</description>
 		<fillPercent>0.20</fillPercent>
 		<uiIconScale>1.5</uiIconScale>
 		<size>(1,1)</size>
