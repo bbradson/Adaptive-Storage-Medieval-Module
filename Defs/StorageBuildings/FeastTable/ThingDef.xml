@@ -11,7 +11,7 @@
 			<drawSize>(5.0,4.0)</drawSize>
 			<drawRotated>false</drawRotated>
 		</graphicData>
-		<description>A large sturdy crate meant for the storage of minerals.</description>
+		<description>A large table great for large feasts. Can store a LOT of meals. Watch out for perishables!</description>
 		<fillPercent>0.20</fillPercent>
 		<uiIconPath>ASMedieval/FeastTable/FeastTable_WoodBase_north</uiIconPath>
 		<uiIconScale>1.3</uiIconScale>
